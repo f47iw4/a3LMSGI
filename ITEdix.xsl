@@ -69,8 +69,33 @@
                             <xsl:value-of select="nombre"/>
                         </nombre> 
                     </ciclo>
-                </xsl:for-each>
+                    </xsl:for-each>
             </ciclos>
+
+            
+            <form action="procesarPeticion.jsp" method="post">
+            <h3>Contacto:</h3>
+
+                <div id="nombre">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre:"/>
+                </div>
+
+                <div id="apellidos">
+                    <label for="apellido">Apellido:</label> 
+                    <input type="text" id="apellido" name="apellido" placeholder="Squarepants"/>
+                </div>
+
+                <div id="mail">
+                    <label for="mail" id="mail" name="mail" placeholder="Mail:"/>
+                    <input type="text" id="mail" name="mail" placeholder="tuemail@mail.com" />
+                </div>
+
+                <textarea id="about" name="about" rows="4" cols="50"> </textarea>
+                    
+            </form>
+
+
 
         </ite>
     </xsl:template>
